@@ -1,0 +1,76 @@
+div {
+    background-color: red;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+
+    /* width (largura) e height (altura) */
+    width: 500px;
+    height: 500px; /* alterada de 500px para 100px para melhor visualização do exemplo */
+    /*overflow: hidden;*/
+
+    /* Padding: preenchimento - espaçamento interno*/
+    
+    /* os paddings foram transferidos para a div.content */
+    
+    /* Short hands*/
+    padding: 25px;
+    
+    /* Long hand 
+    padding-top: 100px;
+    padding-right: 200px;
+    padding-bottom: 500px;
+    padding-left: 500px;
+    */
+    
+    
+    /* Muda os limites da caixa */
+    box-sizing: border-box;
+
+
+    /* border: borda */
+    border-left: 10px dotted rgba(255,255,255,.8);
+
+    /* Margin - margem */
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+
+
+}
+
+/*  
+ criado para exemplificar que o se adicionarmos o conteúdo dentro de outra div  a div pai permanece com as propriedades e o que extrapola é eum funçao dos paddings que estão extrapolando os limites. 
+ Como não demos rolagem para a div pai com a propriedade overflow: hidden, observe que não há aumento da caixa pai.
+
+ */
+ /*
+.content {
+    background-color: #149fe023;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+*/
+    /* Padding: preenchimento - espaçamento interno*/
+/*
+    padding-top: 100px;
+    padding-right: 200px;
+    padding-bottom: 500px;
+}
+
+*/
+
+section {
+    background-color: yellowgreen;
+    width: 500px;
+    height: 200px;
+
+    margin: 0 auto;
+}
+
+/* Margin collapse 
+Não adianta colocar uma margem top no section de 50px, pois como a div está com margem de 50px o CSS vai entender que ali já tem 50px;
+Agora se eu colocar um margem top na section de 70px ele vai somar os 50 da div anterior com os 20 restante da section. 
+
+O margin auto só se aplica para as laterais (left-right);
+*/
