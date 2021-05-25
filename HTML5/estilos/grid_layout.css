@@ -1,0 +1,103 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #7159c1;
+}
+
+header {
+    background: yellowgreen;
+}
+
+main {
+    background:tomato;
+}
+
+aside {
+    background:turquoise;
+}
+
+footer {
+    background:orange;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    /* fr informa que as nossas colunas são flex. 1fr 1fr vai dividir em duas colunas iguais. Podemos aumentar o número para 3fr, por exemplo */
+    grid-template-rows: 20vh 70vh 10vh;
+    /*vh significa viewport height, ou seja, a altura da tala que estou vendo. É como se fosse 20% da tela que estou vendo, 70% da tela que estou vendo e 10% da tela que estou vendo. MAS NÃO É PORCENTAGEM*/
+
+    /* MOSTRANDO O GRID-GAP -- NÃO VAMOS USAR, APENAS MOSTRAR O FUNCIONAMENTO 
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    */
+
+    /* shotrcut hand 
+    grid-gap: 20px 10px; */
+
+    /* CONFIGURANDO O GRID-TEMPLATE-AREAS */
+
+    grid-template-areas: /*"header header" */ "h h"
+                        /* "main aside"*/     "m a"
+                        /*"footer footer"*/   "f f"
+    /* Não preciso utilizar propriamente o nome header, main, aside e footer. Eu posso usar qualquer nome, por exemplo h, m, a e f */
+
+}
+
+
+/* ORGANIZAÇÃO DAS DIV'S - DOS ITEMS 
+- temos 3 colunas nesse caso (inicio - meio - fim ) 
+*/
+/*header {
+    /* long hand 
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    // determinando a posição inicial e final eu coloco a DIV em qualquer lugar
+
+    grid-row-start:3;
+    grid-row-end: 4;
+    */
+
+    /* short hand*/ 
+    /*grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+main {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+aside {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+/* MAS PODEMOS FACILITAR AINDA MAIS ESSAS PROPRIEDADES COMO GRID-AREAS */
+
+header {
+    grid-area: h;
+}
+
+main {
+    grid-area: m;
+}
+
+aside {
+    grid-area: a;
+}
+
+footer {
+    grid-area: f;
+}
+
+/* E podemos alterar essa ordem, colocando por exemplo o header (h) em qualquer lugar. É só substituir, no caso o header h pelo aside a, por exemplo */
+
