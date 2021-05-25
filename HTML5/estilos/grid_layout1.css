@@ -12,12 +12,33 @@ html, body {
     height: 100vh;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 
     grid-gap: 5px;
+
+    /* Aqui a gente fala para o container alinhar o conteúdo */
+   /* justify-content: center; */
+
+    /* O align-conten => Vai alinhar os elementos na vertical */
+   /* align-content: center; */
+
+    /* alinhamento dos items */
+    /*justify-items: center;
+    align-items: start;*/
+
 }
 
 .container > div {
     background: #7159c1;
+    width: 50%;
+    height: 50%;
+
+    /* O próprio elemento se alinha */
+    justify-self: center;
+}
+
+.center {
+    justify-self: center;
+    align-self: center;
 }

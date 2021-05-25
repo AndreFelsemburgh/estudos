@@ -119,3 +119,31 @@ Juntando o `justify`, ou `align`, com esses elementos `content`, `items` e `self
 
 ### Content
 
+`justify-content` e `align-content` nos permite alinhar o próprio grid, relativo ao espaço fora do grid.
+
+O uso dessas propriedades são raras, pois só é aplicado caso o grid seja menor que a área definida.
+(Por exempo, quando usamos em px o tamanho do grid, poderemos terminar com um grid pequeno, para o tamanho da área do grid)
+
+Podemos usar **7valores**;
+1. start
+2. end
+3. center
+4. stretch
+5. space-between
+6. space-around
+7. space-evenly
+
+*** Items
+`justify-items` e `align-items` vai permitir alinhar os items do nosso grid, em qualquer espaço disponível, na célula que ele habitar
+
+Podemos usar **4valores**
+1. start
+2. end
+3. center
+4. stretch
+
+### Self
+
+`justify-self` e `align-self` vai nos permitir alinhar o item em si.
+
+Faz a mesma coisa que o `justify-items` e `align-items`, porém, aplicado diretamente no item de um grid
