@@ -1,3 +1,5 @@
+**Estudo 24/05/2021**
+
 # BOX MODEL
 
 Quando o browser renderiza uma página ele vai entender cada elemento como sendo uma caixa.
@@ -38,3 +40,54 @@ As divs utilizadas, neste exemplo, tem como display padrão o **display: block;*
 Existem os **elementos de bloco** e os **elementos de linha**.
 Nem todas as propriedades dos elementos em bloco, funcionam nos elementos em linha.
 Você pode até converter um elemento em linha para um elemento **inliine-block**. Aí ele receberá normalmente as propriedades para bloco.
+
+
+-------------------------------------------------------------------------------------
+**Estudo 25/05/2021**
+
+# CSS GRID LAYOUT
+
+## GRID
+- Bidimensional
+- Divisão de toda a página em linhas e colunas
+- Colocar elementos onde quiser nessa divisão
+
+## GRID OU FLEXBOX
+- Grid: Duas dimensões (colunas e linhas)
+- Flexbox: Uma dimensão (ou coluna ou linha)
+- Um complementa o trabalho do outro
+- Verificar quais navegadores ainda não estão aceitando o GRID
+
+obs.: A idéia é usar os 2 (GRID e FLEXBOX), pois assim haverá uma flexibilidade incrível.
+
+
+## PROPRIEDADES GRID
+
+Vamos separar em 2 grupos:
+`container` e `item(s)`
+
+### CONTAINER
+- display: grid;  ==> **Inicia o seu container falando que é um grid** 
+- grid-template-columns; ==> **Vai começar a fatiar as suas colunas, vai dizer quantas colunas o grid possui**
+- grid-template-rows; ==> **Vai dizer quantas linhas o grid possui**
+- grid-gap     ==> **São os espaçamentos entre colunas e linhas**
+    - grid-row-gap;
+    - grid-column-gap;
+- grid-template-areas;  ==> **Delimitar áreas**
+
+... e mais 4 propriedades e **alinhamento**
+
+
+### ITEM(s)
+
+- grid-column   ==> **Vai falar sobre a nossa coluna, vai dizer aonde fica as nossas colunas**
+    -grid-column-start
+    -grid-column-end
+- grid-row      ==> **Vai falar sobre as nossas linhas, vai dizer aonde fica as nossas linhas**
+    -grid-row-start
+    -grid-row-end
+- grid-area     ==> **Vai dizer aonde fica as nossas áreas se usarmos grid-area**
+
+... e mais 2 propriedades e **alinhamento**
+
+
