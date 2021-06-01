@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana;
+    color: #000;
+}
+
+.item {
+    margin: 5px;
+    padding: 5px;
+    background: #447;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    /*display: flex;*/
+}
+
+
+.flexivel {
+    display: flex;
+}
