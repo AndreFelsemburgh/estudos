@@ -14,3 +14,18 @@
 - Se o container tiver uma **largura definida** e **dependendo da quantidade de items**, **eles poderão extrapolar o container**;
 - Se definirmos uma altura para o container, por padrão, os *items* adotarão a altura do container;
 - Dependendo da quantidade de `flex-items` que tiver dentro do seu container, eles poderão se expandir ou contrair, até que atinjam a largura máxima do container. E também os `flex-items` serão ajustados aos seus conteúdos.
+
+
+### 02/06/2021
+
+## flex-direction
+
+- Por padrão, o flex-direction é definido como **row**.
+- Ao modificar o flex-direction para **column**, invertemos o eixo principal para **cross axis** e o secundário para **main axis**.
+
+### Valores para a propriedade flex-direction
+
+1. row
+2. row-reverse
+3. column
+4. colum-reverse
