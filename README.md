@@ -1,5 +1,4 @@
-# estudos
- Meus estudos
+# Estudos sobre Flexbox
 
 ### 01/06/2021
 
@@ -20,12 +19,22 @@
 
 ## flex-direction
 
-- Por padrão, o flex-direction é definido como **row**.
-- Ao modificar o flex-direction para **column**, invertemos o eixo principal para **cross axis** e o secundário para **main axis**.
+- Por padrão, o *flex-direction* é definido como **row**.
+- Ao modificar o *flex-direction* para **column**, invertemos o eixo principal para **cross axis** e o secundário para **main axis**.
 
 ### Valores para a propriedade flex-direction
+1. row           -> Em linha, *da esquerda para direita*
+2. row-reverse   -> Em linha, *da direita para esquerda*
+3. column        -> Em coluna, *de cima para baixo*
+4. colum-reverse -> Em coluna, *de baixo para cima*
 
-1. row
-2. row-reverse
-3. column
-4. colum-reverse
+
+## flex-wrap
+
+- Define se os elementos `flex-items` do container irão quebrar a linha ou se irão continuar na mesma linha, mesmo que não caibam no seu container.
+- Por padrão é definida com `no-wrap`.
+
+### Valores para a propriedade flex-wrap
+1. no-wrap      -> (sem quebrar linhas)
+2. wrap         -> (quebra a linha se não os `flex-items` não couber na largura do container)
+3. wrap-reverse -> (quebra a linha e colocando os `flex-items` no sentido inverso, ou seja, do **último elemento para o primeiro, da direita para a esquerda**.)
