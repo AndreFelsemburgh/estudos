@@ -11,13 +11,14 @@ body {
 
 h1 {
     margin-top: 30px;
+    color: red;
 }
 
 
 .item {
     margin: 5px;
     padding: 5px;
-    background: #447;
+    background: #3b3b39;
     text-align: center;
     font-size: 1em;
     color: #fff;
@@ -61,7 +62,7 @@ h1 {
 
 /* FLEX-WRAP */
 .no_wrap {
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
 }
 
 .wrap {
