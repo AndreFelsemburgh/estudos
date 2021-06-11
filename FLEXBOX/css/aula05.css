@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana;
+    color: #000;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    margin: 15px 0 5px;
+}
+
+p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.propriedades {
+    margin: 30px 0;
+    background-color: red;
+    color: white;
+  }
+
+.destaque {
+    color: red;
+}
+
+.item {
+    margin: 5px;
+    padding: 5px;
+    background: #3b3b39;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    /*height: 400px;*/
+    margin: 0 auto;
+    border: 1px solid #000;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*flex-wrap: no-wrap;*/
+    /*flex-flow: row wrap;*/
+    justify-content: flex-end;
+
+}
+
+/* PROPRIEDADES DE FLEX-CONTAINER */
+
+.flexivel {
+    display: flex;
+}
+
+
+/* FLEX-DIRECTION */
+.row {
+    flex-direction: row;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+
+/* FLEX-WRAP */
+.no_wrap {
+    flex-wrap: nowrap;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap_reverse {
+    flex-wrap: wrap-reverse;
+}
+
+
+/* FLEX-FLOW => É A JUNÇÃO DE FLEX-DIRECTION COM FLEX-WRAP, PORÉM QUE SÓ FAZEM SENTIDO QUANDO USAMOS O ROW, POIS QUANDO DECLARAMOS O FLUXO COMO VERTICAL, ELE AUTOMATICAMENTE JÁ QUEBRA A LINHA. */
+
+.flow_row_nowrap {
+    flex-flow: row nowrap;
+}
+
+.flow_row_wrap {
+    flex-flow: row wrap;
+}
+
+.flow_row_wrap-reverse {
+    flex-flow: row wrap-reverse;
+}
+
+.flow_column_nowrap {
+    flex-flow: column nowrap;
+}
+
+.flow_column_wrap {
+    flex-flow: column wrap;
+}
+
+.flow_column_wrap-reverse {
+    flex-flow: column wrap-reverse;
+}
+
+/* JUSTIFY-CONTENT */
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.height {
+    height: 200px;
+}
