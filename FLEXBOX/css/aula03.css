@@ -9,10 +9,21 @@ body {
     text-align: center;
 }
 
-h1 {
-    margin-top: 30px;
+h2 {
     color: red;
+    margin: 15px 0 5px;
 }
+
+p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.propriedades {
+    margin: 30px 0;
+    background-color: red;
+    color: white;
+  }
 
 
 .item {
@@ -43,25 +54,25 @@ h1 {
 
 
 /* FLEX-DIRECTION */
-.linha {
+.row {
     flex-direction: row;
 }
 
-.linha_reversa {
+.row-reverse {
     flex-direction: row-reverse;
 }
 
-.vertical {
+.column {
     flex-direction: column;
 }
 
-.vertical_reverso {
+.column-reverse {
     flex-direction: column-reverse;
 }
 
 
 /* FLEX-WRAP */
-.no_wrap {
+.nowrap {
     flex-wrap: nowrap;
 }
 
